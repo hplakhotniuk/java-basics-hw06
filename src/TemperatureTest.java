@@ -14,8 +14,9 @@ public class TemperatureTest {
     return new Object[][]{
         {212.0, 100.0},
         {32.0, 0.0},
-        {-15, -26.11111111111111}
-        // TODO add 2 more test data here
+        {-15, -26.11111111111111},
+        {0, -17.77777777777778},
+        {-15e3, -8351.111111111111}
     };
   }
 
@@ -28,8 +29,9 @@ public class TemperatureTest {
     return new Object[][]{
         {100.0, 212.0},
         {0.0, 32.0},
-        {-26.11111111111111, -15}
-        // TODO add 2 more test data here
+        {-26.11111111111111, -15},
+        {123e100, 2.214E102},
+        {-1.0E-21, 32.0}
     };
   }
 
